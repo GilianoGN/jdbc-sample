@@ -12,7 +12,7 @@
 	<artifactId>jdbc-sample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jdbc-sample</name>
-	<description>Projetoc MySQL no Java</description>
+	<description>Projeto com MySQL no Java</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -30,6 +30,12 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
+<!--	<dependency>
+    		<groupId>jakarta.servlet</groupId>
+    		<artifactId>jakarta.servlet-api</artifactId>
+    		<version>6.0.0</version>
+			<scope>provided</scope>
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
@@ -71,11 +77,6 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-    		<groupId>net.datafaker</groupId>
-	    	<artifactId>datafaker</artifactId>
-    		<version>2.4.3</version>
-		</dependency>
-		<dependency>
 			<groupId>at.favre.lib</groupId>
 			<artifactId>bcrypt</artifactId>
 			<version>0.10.2</version>
@@ -107,7 +108,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.14.0</version>
 				<configuration>
+					<source>21</source>
+					<target>21</target>
 					<annotationProcessorPaths>
 						<path>
 							<groupId>org.projectlombok</groupId>
