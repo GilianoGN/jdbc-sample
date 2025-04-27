@@ -14,7 +14,6 @@ import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import Dio.jdbc_sample.persistence.entidy.EmployeeEntity;
-import lombok.var;
 
 @Repository
 public class EmployeeDAO {
